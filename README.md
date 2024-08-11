@@ -16,7 +16,7 @@
 <br/>
 
 **Overview of Functionality/Modules**
-1. **Login and Registration:**
+1. **Login and Registration**
 2. **User Profile Management:**
    - Allows users to edit basic profile information, change avatars, and update passwords.
 3. **Article Categories:**
