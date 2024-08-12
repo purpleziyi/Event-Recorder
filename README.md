@@ -31,16 +31,17 @@
 <br/>
 
 **Function display/operation screenshots**
-![big-event login](https://github.com/purpleziyi/BigEvent/assets/161695864/6c28934e-4faf-472f-8039-758596037605)
-![big-event article_category](https://github.com/purpleziyi/BigEvent/assets/161695864/557a9fe3-2454-4042-ade9-7a48653d3034)
+![big-event login](https://github.com/user-attachments/assets/d7f203e2-79b4-486d-b281-f794743ad094)
+![big-event article_category](https://github.com/user-attachments/assets/6b760774-316a-4895-89a7-fde307f3fc55)
 ![big-event add_categoty](https://github.com/purpleziyi/BigEvent/assets/161695864/1b9801ed-2410-437e-8a0b-4b97b820c144)
-![big-event article_management](https://github.com/purpleziyi/BigEvent/assets/161695864/ba3f50e0-bdce-4f3d-b903-d326c7007b92)
-![big-event add article](https://github.com/purpleziyi/BigEvent/assets/161695864/96b2e6ba-635c-48cd-acf6-a3a13c93cc24)
-![big-event userInfo](https://github.com/purpleziyi/BigEvent/assets/161695864/c66e8ef8-f937-4f1a-9054-bddaa46032ee)
-![big-event modify_info](https://github.com/user-attachments/assets/3983000b-5c6c-4724-9f2f-318614497efc)
-![big-event change_avatar](https://github.com/user-attachments/assets/07ecef93-3fab-4045-8985-d0569783054c)
-![big-event logout](https://github.com/purpleziyi/BigEvent/assets/161695864/22f3a938-dff5-4bde-9dbd-e27a44cbe3d1)
+![big-event article_management](https://github.com/user-attachments/assets/3de888cd-e3a9-4319-9d72-e3a034d13e01)
+![big-event add article](https://github.com/user-attachments/assets/51469868-fead-4743-b881-f8a14e874fd4)
+![big-event userInfo](https://github.com/user-attachments/assets/28c9f8a4-56c0-4736-bb3f-213b6e0c849e)
+![big-event modify_info](https://github.com/user-attachments/assets/ff3dc914-510b-4da1-9afb-f400de456d4d)
 
+![big-event change_avatar](https://github.com/user-attachments/assets/b4f402e6-17e8-44ea-ae46-50c21cb253d7)
+![big-event change_password](https://github.com/user-attachments/assets/ef8a1bc3-d1a8-4b2c-92f7-2ce2b04d5eca)
+![big-event logout](https://github.com/purpleziyi/BigEvent/assets/161695864/22f3a938-dff5-4bde-9dbd-e27a44cbe3d1)
 
 
 
