@@ -66,12 +66,6 @@
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
 
-    <!--Unit test dependencies-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-    </dependency>
-
     <!--aliyun cloud-->
     <dependency>
       <groupId>com.aliyun.oss</groupId>

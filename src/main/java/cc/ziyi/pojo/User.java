@@ -1,7 +1,5 @@
 package cc.ziyi.pojo;
 
-
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
@@ -14,10 +12,10 @@ import java.time.LocalDateTime;
 
 @Data
 public class User {
-
+    // validate member variables for update-method
     @NotNull
     private Integer id; //PRIMARY KEY ID
-    private String username;  // 5-16 characters
+    private String username;  // 5-16 characters, cannot be edited in frontend
 
     @JsonIgnore  // password will not appear in the final json-string when converting from current object to json
     private String password;  // 5-16 characters

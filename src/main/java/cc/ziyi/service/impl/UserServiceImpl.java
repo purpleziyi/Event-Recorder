@@ -38,7 +38,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-//    @Transactional
     public void update(User user) {
         user.setUpdateTime(LocalDateTime.now()); // update the updateTime-attribute
         userMapper.update(user);  // call method in Mapper

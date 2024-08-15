@@ -26,7 +26,7 @@ public class ArticleServiceImpl implements ArticleService {
 
         Map<String,Object> map = ThreadLocalUtil.get();
         Integer userId = (Integer) map.get("id"); // get userId from ThreadLocal
-        article.setCreateUser(userId);
+        article.setCreateUser(userId);   // set creator
 
         articleMapper.add(article);
     }

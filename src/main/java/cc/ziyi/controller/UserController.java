@@ -29,7 +29,7 @@ public class UserController {
     private UserService userService;  // need to call methods from service-layer
 
     @Autowired
-    private StringRedisTemplate stringRedisTemplate;
+    private StringRedisTemplate stringRedisTemplate;  // for optimizing Login
 
 
     @PostMapping("/register")  // path: /user/register;  method: POST; request sample: username=alice&password=123456
@@ -48,7 +48,7 @@ public class UserController {
 
     }
 
-    @PostMapping("/login")   // path:/user/login;  method: POST; request sample: username=alice&password=123456
+    @PostMapping("/login")   // path:/user/login;  method: POST; request from browser: username=alice&password=123456
     public Result<String> login(@Pattern(regexp = "^\\S{5,16}$") String username, @Pattern(regexp = "^\\S{5,16}$") String password){
 
         // 1. find users according to the username user input (with Service-method)
@@ -107,12 +107,11 @@ public class UserController {
 
     @PatchMapping("/updatePwd")  // /user/updatePwd;  method:PATCH; param: application/json
     public Result updatePwd(@RequestBody Map<String, String> params, @RequestHeader("Authorization") String token){
-        // 1. Check parameters manually (Validation cannot do this)
+        // 1. Check parameters manually (Make sure all parameters are successfully passed in)
         String oldPwd = params.get("old_pwd");
         String newPwd = params.get("new_pwd");
         String rePwd = params.get("re_pwd");
 
-        // Make sure all parameters are successfully passed in
         if (!StringUtils.hasLength(oldPwd) || !StringUtils.hasLength(newPwd) || !StringUtils.hasLength(rePwd)) {
             return Result.error("Missing required parameters");
         }

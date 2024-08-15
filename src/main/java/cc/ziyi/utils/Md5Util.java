@@ -1,5 +1,6 @@
 package cc.ziyi.utils;
 
+// here refer to a template from https://www.cnblogs.com/kitor/p/12790821.html
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

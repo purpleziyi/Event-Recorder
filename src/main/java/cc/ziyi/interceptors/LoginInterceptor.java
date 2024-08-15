@@ -35,7 +35,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             }
 
             /** parsing token, get business data */
-            Map<String, Object> claims = JwtUtil.parseToken(token);  // login-method create claims-HashMap for holding user info
+            Map<String, Object> claims = JwtUtil.parseToken(token);  // login-method create claims-Map for holding userInfo(id and username)
 
             /** store the business data into ThreadLocal */
             ThreadLocalUtil.set(claims);

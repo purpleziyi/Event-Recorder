@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Map;
 
 // usually companies or projects may choose to provide their own encapsulated utility classes or libraries
-// here refer to some commonly used templates from the Internet
+// here refer to a template from https://blog.51cto.com/u_16099297/11211011
 public class JwtUtil {
 
     private static final String KEY = "ziyiz";
@@ -17,7 +17,7 @@ public class JwtUtil {
     public static String genToken(Map<String, Object> claims) {
         return JWT.create()
                 .withClaim("claims", claims)
-                .withExpiresAt(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 12))
+                .withExpiresAt(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 12)) // 12h
                 .sign(Algorithm.HMAC256(KEY));
     }
 
