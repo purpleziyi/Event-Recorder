@@ -8,7 +8,7 @@
  **Key Technical Challenges** 
 - **Database Operations**: Utilized **MyBatis** for efficient database operations, enabling **dynamic SQL** generation and seamless object-relational mapping.
 - **Authentication**: Implemented **JWT (JSON Web Token)** for secure user authentication and session management. JWTs are issued upon successful login and validated in subsequent requests to ensure security.
-- **Caching**: Leveraged **Redis** for caching purposes, enhancing application performance. Implemented a Redis **Token Revocation Mechanism** to manage token invalidation and ensure security upon changes like password updates.
+- **Distributed Caching**: Utilized Redis for distributed token management. Implemented a **Redis-based Token Revocation Mechanism** to efficiently manage token invalidation, ensuring security and consistency across multiple server instances, particularly during events like password updates.
 - **Validation**: Utilized Bean Validation for parameter validation. Employed standard constraints such as @NotEmpty and @Pattern to ensure data integrity. Implemented **custom validation** for specific fields to enforce business rules.
 - **Interceptor**: Registered an interceptor to ensure that all incoming requests are processed uniformly. This allows for centralized validation, logging, and other cross-cutting concerns to be handled efficiently.
 - **ThreadLocal**: Used ThreadLocal to manage thread-local variables, reducing the need for parameter passing and facilitating data sharing within the same thread. This improves performance and ensures thread safety.
